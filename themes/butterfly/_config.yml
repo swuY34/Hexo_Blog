@@ -94,11 +94,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /img/Avatar.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: /img/Avatar.png
   effect: false
 
 # Disable all banner image
@@ -443,7 +443,7 @@ messenger:
 # --------------------------------------
 footer:
   owner:
-    enable: true
+    enable: false
     since: 2020
   custom_text: 还望大家可以多多参考学习, 但是希望不要抄袭或者用来做不道德的事情.
   copyright: false # Copyright of theme and framework
@@ -650,7 +650,7 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 欢迎来到小树屋
+    - 欢迎来到小窝
     - (> W <)...
 
 # Loading Animation (加載動畫)
@@ -682,8 +682,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: GitHub
+      link: https://github.com/swuY34
   card_announcement:
     enable: true
     content: This is my Blog
@@ -895,8 +895,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <link rel="stylesheet" href="../../source/css/modify.css">
-  - <script src="../../source/script/modify.js"></script>
+  - <link rel="stylesheet" href="/css/modify.css">
+  - <script src="/script/modify.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
