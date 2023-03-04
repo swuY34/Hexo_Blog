@@ -25,7 +25,7 @@ nav:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -37,7 +37,7 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
@@ -208,16 +208,19 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: false
-  decode: false
+  enable: true
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
+    - img: /img/Avatar.png
+      link:
+      text: wechat
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
@@ -240,7 +243,7 @@ related_post:
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # post_pagination (分頁)
 # value: 1 || 2 || false
