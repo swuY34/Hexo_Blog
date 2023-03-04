@@ -52,21 +52,27 @@
   [data-theme='dark'] &
     color: var(--light-grey)
 
+#nav *::after{
+    background-color: yellow!important;
+}
 
 #nav .site-name {
   font-size: 1.2em;
 }
 
 #nav .site-page {
-  margin-right: 10px;
-  font-size: 1.1em;
-}
-
-#nav *::after{
-    background-color: yellow!important;
+  font-size: 1em;
 }
 
 
-#card-info-btn {
-  font-size: 1.3em;
+/* 更改字体 */
+@font-face {
+  font-family: 'tzy';
+/* 字体名自定义即可 */
+  src: url("../fonts/ZhuZiAWan.woff2");
+/* 字体文件路径 */
+}
+
+body {
+    font-family: tzy !important;
 }

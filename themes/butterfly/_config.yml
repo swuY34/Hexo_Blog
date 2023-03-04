@@ -44,6 +44,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
+  fab fa-qq: tencent://message/?uin=3057691848&Site=tool.520101.com&Menu=yes || QQ
+  fas fa-envelope: mailto:swu341457@gmail.com || Email
   # fab fa-github: https://github.com/xxxxx || Github
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
 
@@ -443,10 +445,10 @@ messenger:
 # --------------------------------------
 footer:
   owner:
-    enable: false
+    enable: true
     since: 2020
-  custom_text: 还望大家可以多多参考学习, 但是希望不要抄袭或者用来做不道德的事情.
-  copyright: false # Copyright of theme and framework
+  custom_text:
+  copyright: true # Copyright of theme and framework
 
 # Analysis
 # --------------------------------------
@@ -618,7 +620,7 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family:
+  font-family: tzy
   code-font-family:
 
 # Font settings for the site title and site subtitle
