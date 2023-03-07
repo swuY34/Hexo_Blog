@@ -1,69 +1,158 @@
 
 
 
-@import 'nib'
+#page-header,#page-header:before {
+  background: 0 0!important
+}
 
-// 顶部图
-#page-header
-  &, &:before
-    background: transparent !important
-  &.post-bg, &.not-home-page
-    height: 280px !important
-  #post-info
-    bottom: 40px !important
-  #page-site-info
-    top: 140px !important
+#page-header.not-home-page,#page-header.post-bg {
+  height: 280px!important
+}
 
-  @media screen and (max-width: 768px)
-    &.not-home-page
-      height: 200px !important
-    #post-info
-      bottom: 10px !important
-    #page-site-info
-      top: 100px !important
+#page-header #post-info {
+  bottom: 40px!important
+}
 
-.top-img
-  height: 250px
-  margin: -50px -40px 50px
-  border-top-left-radius: inherit
-  border-top-right-radius: inherit
-  background-position: center center
-  background-size: cover
-  transition: all 0.3s
+#page-header #page-site-info {
+  top: 140px!important
+}
 
-  @media screen and (max-width: 768px)
-    height: 230px
-    margin: -36px -14px 36px
+@media screen and (max-width: 768px) {
+  #page-header.not-home-page {
+      height:200px!important
+  }
 
-  [data-theme='dark'] &
-    filter: brightness(0.8)
+  #page-header #post-info {
+      bottom: 10px!important
+  }
+
+  #page-header #page-site-info {
+      top: 100px!important
+  }
+}
+
+.top-img {
+  height: 250px;
+  margin: -50px -40px 50px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s
+}
+
+@media screen and (max-width: 768px) {
+  .top-img {
+      height:230px;
+      margin: -36px -14px 36px
+  }
+}
+
+[data-theme=dark] .top-img {
+  filter: brightness(.8)
+}
+
+:root {
+  --card-bg: rgba(255,255,255,0.79)!important
+}
+
+[data-theme=dark]:root {
+  --card-bg: rgba(18,18,18,0.79)!important
+}
+
+#footer:before {
+  background-color: rgba(255,255,255,.5)
+}
+
+[data-theme=dark] #footer:before {
+  background-color: rgba(0,0,0,.5)
+}
+
+#footer-wrap,#footer-wrap a {
+  color: #111;
+  -webkit-transition: unset;
+  -moz-transition: unset;
+  -o-transition: unset;
+  -ms-transition: unset;
+  transition: unset
+}
+
+[data-theme=dark] #footer-wrap,[data-theme=dark] #footer-wrap a {
+  color: var(--light-grey)
+}
+
+.card-info-social-icons i:hover {
+  -webkit-transform: rotate(360deg)!important;
+  -moz-transform: rotate(360deg)!important;
+  -o-transform: rotate(360deg)!important;
+  -ms-transform: rotate(360deg)!important;
+  transform: rotate(360deg)!important
+}
+
+.twikoo {
+  line-height: 1.5
+}
+
+[data-theme=dark] .toggle {
+  border-color: #383838
+}
+
+[data-theme=dark] .toggle>.toggle-button {
+  color: rgba(255,255,255,.7);
+  background-color: #2c2c2c
+}
+
+.tabs>.tab-contents .tab-item-content {
+  padding: 16px!important
+}
+
+.flink .flink-list>.flink-list-item .flink-item-name {
+  font-size: 1.35em!important
+}
+
+#web_bg:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3)
+}
+
+.post_cover {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d
+}
 
 // 页脚
 #footer:before
-  background-color: alpha(#FFF, .5)
+background-color: alpha(#FFF, .5)
 
-  [data-theme='dark'] &
-    background-color: alpha(#000, .5)
+[data-theme='dark'] &
+  background-color: alpha(#000, .5)
 
 #footer-wrap, #footer-wrap a
-  color: #111
-  transition: unset
+color: #111
+transition: unset
 
-  [data-theme='dark'] &
-    color: var(--light-grey)
+[data-theme='dark'] &
+  color: var(--light-grey)
 
+
+/* 自定义 */
 #nav *::after{
     background-color: yellow!important;
-}
-
-#nav .site-name {
-  font-size: 1.2em;
 }
 
 #nav .site-page {
   font-size: 1em;
 }
-
 
 /* 更改字体 */
 @font-face {
@@ -74,5 +163,44 @@
 }
 
 body {
-    font-family: tzy !important;
+  font-family: tzy !important;
+}
+
+
+/* 更改页面站名效果 */
+.site-name {
+  position: relative;
+  font-size: 1.3em;
+  padding-left: 5px;
+}
+
+.site-name::before {
+  opacity: 0;
+  background-color: #39c5bb !important;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  position: absolute;
+  top: 0!important;
+  right: 0!important;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  content: "\f015";
+  font-family: "Font Awesome 6 Free";
+  text-align: center;
+  line-height: 100%;
+  color: #fff;
+  line-height: 34px;
+}
+
+.site-name:hover::before {
+  opacity: 1;
 }
