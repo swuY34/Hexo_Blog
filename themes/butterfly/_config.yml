@@ -25,11 +25,11 @@ nav:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_shrink: true # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: 200 # unit: px
 code_word_wrap: true
 
 # copy settings
@@ -917,9 +917,10 @@ inject:
     - <link rel="stylesheet" href="/css/NeonLight.css"> # 霓虹灯
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="/js/modify.js"></script>
-    - <canvas id="universe"></canvas>
-    - <script defer src="/js/universe.js"></script>
+    - <script src="/js/modify.js"></script> # 自定义
+    - <canvas id="universe"></canvas> # 星空流星背景
+    - <script defer src="/js/universe.js"></script> # 星空流星背景
+    - <script src="/js/hightPercent.js"></script> # 更改关于页面高度百分比的文件
     # - <script src="xxxx"></script>
 
 # CDN

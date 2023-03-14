@@ -5,6 +5,8 @@ tags:
     - Hexo
     - Live2D
 categories: Hexo
+
+highlight_shrink: false
 ---
 
 # Hexo 自定义 live2d 看板娘 
@@ -37,7 +39,9 @@ npm install --save hexo-helper-live2d
 
 ![](Hexo自定义live2D看板娘/原模型文件.png)
 
-> 真正需要的是 `normal` 下的那些东西, 所以可以直接复制normal文件夹到 `live2d_models` 文件夹下.
+> 真正需要的是带有 `.moc` 文件的那个目录, 所以可以直接复制normal或destroy文件夹到 `live2d_models` 文件夹下.
+
+![](Hexo自定义live2D看板娘/Normal和Destroy模型的区别.png)
 
 之后将 `normal` 文件夹重命名, 然后重命名 `normal` 文件夹下的 `normal\model.json` 文件
 
